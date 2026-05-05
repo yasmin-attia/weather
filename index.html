@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="action.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>weather</title>
+  </head>
+  <body>
+    <!-- icon-navbar -->
+    <nav>
+      <!-- weather icon -->
+      <div class="container">
+        <div>
+          <img src="./photoes/download.png" />
+          <h2>WEATHER</h2>
+        </div>
+        <div>
+          <select>
+            <option id="title">⚙️UNITS</option>
+            <option>Imperial</option>
+            <option>Metric</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+    <!-- header -->
+    <header>
+      <h1>How is the sky looking today</h1>
+    </header>
+    <!-- search section -->
+    <section class="search">
+      <form>
+        <input
+          id="search"
+          type="search"
+          placeholder="🔍Search for a place..."
+        />
+        <button class="btn">Search</button>
+      </form>
+    </section>
+    <!-- bage body -->
+    <section class="bage">
+      <!-- left hand of bage -->
+      <div class="left">
+        <!--current temperature  -->
+        <div class="current">
+          <!-- place and day -->
+          <div class="tem">
+            <h5>Cairo,Egypt</h5>
+            <p>Monday,Aug 5,2026</p>
+          </div>
+          <!-- temperature -->
+          <div class="tem"><h1>20°C</h1></div>
+        </div>
+        <!-- additional metrics -->
+        <div class="metrics">
+          <div class="child">
+            <p>feels like</p>
+            <h3>18°</h3>
+          </div>
+          <div class="child">
+            <p>Wind</p>
+            <h3>14km/h</h3>
+          </div>
+          <div class="child">
+            <p>Precipitation</p>
+            <h3>0mm</h3>
+          </div>
+          <div class="child">
+            <p>Humidity</p>
+            <h3>46%</h3>
+          </div>
+        </div>
+        <!-- daily forecast -->
+        <div class="daily">
+          <h3>Daily forecase</h3>
+          <div class="grid">
+            <div class="child">
+              <p>Tue</p>
+              <img src="./photoes/download (1).png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Wed</p>
+              <img src="./photoes/download (1).png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Thu</p>
+              <img src="./photoes/sun.png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Fri</p>
+              <img src="./photoes/download (2).png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Sat</p>
+              <img src="./photoes/partly-cloudy-night.png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Sun</p>
+              <img src="./photoes/snow.png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+            <div class="child">
+              <p>Mon</p>
+              <img src="./photoes/storm.png" />
+              <div class="d-flex justify-content-between text-light">
+                <h4>20°</h4>
+                <h4>14°</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+      </div>
+      <!-- right hand of bage -->
+      <div class="right">
+        <div class="head d-flex justify-content-between">
+          <h5 class="text-light">Hourly forecast</h5>
+          <select>
+            <option class="text-light">Tuesday</option>
+            <option class="text-light">Wednsday</option>
+            <option class="text-light">Thrusday</option>
+            <option class="text-light">Friday</option>
+            <option class="text-light">Saterday</option>
+            <option class="text-light">Sunday</option>
+            <option class="text-light">Monday</option>
+          </select>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div class="image"></div>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/download (1).png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>20°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/download (1).png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>20°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/sun.png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>20°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/download (2).png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>20°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/partly-cloudy-night.png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>19°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/snow.png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>19°</h4>
+        </div>
+        <div class="fore d-flex justify-content-around">
+          <div class="image d-flex">
+            <img src="./photoes/storm.png" />
+            <h5>3pm</h5>
+          </div>
+          <h4>18°</h4>
+        </div>
+      </div>
+    </section>
+    <!-- js part -->
+    <script>
+      console.log(2);
+      const search = document.getElementById("search");
+      console.log("search");
+    </script>
+  </body>
+</html>
